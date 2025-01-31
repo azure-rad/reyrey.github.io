@@ -1,0 +1,66 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+/* Section styles */
+section {
+    padding: 5rem 2rem;
+    min-height: 100vh;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+/* Add more styles for other sections */
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Add more mobile styles */
+}
